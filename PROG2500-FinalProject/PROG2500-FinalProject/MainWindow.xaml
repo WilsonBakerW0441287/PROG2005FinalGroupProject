@@ -11,6 +11,10 @@
         <ResourceDictionary>
             <BitmapImage x:Key="home" UriSource="/Images/home.png"/>
             <BitmapImage x:Key="close" UriSource="/Images/close.png"/>
+            <BitmapImage x:Key="person" UriSource="/Images/person.png"/>
+            <BitmapImage x:Key="job" UriSource="/Images/job.png"/>
+            <BitmapImage x:Key="title" UriSource="/Images/title.png"/>
+            <BitmapImage x:Key="genre" UriSource="/Images/genre.png"/>
             <Style TargetType="MenuItem">
                 <Setter Property="FontSize" Value="24"></Setter>
             </Style>
@@ -32,6 +36,26 @@
                         <Image Source="{StaticResource home}"></Image>
                     </MenuItem.Icon>
                 </MenuItem>
+                <MenuItem Header="_Person" Click="PersonButton_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource person}"></Image>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="_Job" Click="JobButton_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource job}"></Image>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="_Title" Click="TitleButton_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource title}"></Image>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="_Genre" Click="GenreButton_Click">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource genre}"></Image>
+                    </MenuItem.Icon>
+                </MenuItem>
             </MenuItem>
         </Menu>
         <DockPanel DockPanel.Dock="Top" LastChildFill="False">
@@ -42,6 +66,18 @@
             <StackPanel Orientation="Vertical" Width="50">
                 <Button x:Name="HomeButton" Click="HomeButton_Click">
                     <Image Source="{StaticResource home}"></Image>
+                </Button>
+                <Button x:Name="PersonButton" Click="PersonButton_Click">
+                    <Image Source="{StaticResource person}"></Image>
+                </Button>
+                <Button x:Name="JobButton" Click="JobButton_Click">
+                    <Image Source="{StaticResource job}"></Image>
+                </Button>
+                <Button x:Name="TitleButton" Click="TitleButton_Click">
+                    <Image Source="{StaticResource title}"></Image>
+                </Button>
+                <Button x:Name="GenreButton" Click="GenreButton_Click">
+                    <Image Source="{StaticResource genre}"></Image>
                 </Button>
             </StackPanel>
         </ToolBar>

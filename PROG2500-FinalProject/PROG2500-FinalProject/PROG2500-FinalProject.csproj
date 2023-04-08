@@ -10,7 +10,11 @@
 
   <ItemGroup>
     <None Remove="Images\close.png" />
+    <None Remove="Images\genre.png" />
     <None Remove="Images\home.png" />
+    <None Remove="Images\job.png" />
+    <None Remove="Images\person.png" />
+    <None Remove="Images\title.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,7 +34,19 @@
     <Resource Include="Images\close.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\genre.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\home.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\job.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\person.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\title.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

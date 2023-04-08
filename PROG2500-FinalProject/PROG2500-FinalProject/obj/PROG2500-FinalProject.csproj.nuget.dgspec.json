@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj": {}
+    "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj": {
+    "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
+        "projectUniqueName": "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
         "projectName": "PROG2500-FinalProject",
-        "projectPath": "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
+        "projectPath": "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
         "packagesPath": "C:\\Users\\HJang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2500-FinalProject\\PROG2500-FinalProject\\obj\\",
+        "outputPath": "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HJang\\AppData\\Roaming\\NuGet\\NuGet.Config",

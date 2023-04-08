@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\HJang\Desktop\4th\C#\Final Project\PROG2500-FinalProject\PROG2500-FinalProject\obj\Debug\net7.0-windows\
+C:\Users\HJang\Desktop\4th\C#\Final Project\PROG2005FinalGroupProject\PROG2500-FinalProject\PROG2500-FinalProject\obj\Debug\net7.0-windows\
 PROG2500_FinalProject
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\HJang\Desktop\4th\C#\Final Project\PROG2500-FinalProject\PROG2500-FinalProject\App.xaml
-2-654420212
+C:\Users\HJang\Desktop\4th\C#\Final Project\PROG2005FinalGroupProject\PROG2500-FinalProject\PROG2500-FinalProject\App.xaml
+61243859619
 
-12857113028
+161460606742
 226-1631901243
-MainWindow.xaml;Pages\Home.xaml;
+MainWindow.xaml;Pages\Genre.xaml;Pages\Home.xaml;Pages\Job.xaml;Pages\Person.xaml;Pages\Title.xaml;
 
 False
 
