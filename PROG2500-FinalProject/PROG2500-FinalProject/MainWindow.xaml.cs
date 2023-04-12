@@ -22,6 +22,11 @@ namespace PROG2500_FinalProject
     public partial class MainWindow : Window
     {
         public Pages.Home homePage { get; set; }
+        public Pages.Genres genrePage { get; set; }
+        public Pages.Jobs jobsPage { get; set; }
+        public Pages.Person peoplePage { get; set; }
+        public Pages.Title titlePage { get; set; }
+        
 
         public MainWindow()
         {
@@ -35,6 +40,26 @@ namespace PROG2500_FinalProject
             System.Windows.Application.Current.Shutdown();
         }
 
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainframe.NavigationService.Navigate(homePage);
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            mainframe.NavigationService.Navigate(homePage);
+        }
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainframe.NavigationService.Navigate(homePage);
+        }
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainframe.NavigationService.Navigate(homePage);
+        }
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainframe.NavigationService.Navigate(homePage);
+        }
         private void HomeButton_Click(object sender, RoutedEventArgs e)
         {
             mainframe.NavigationService.Navigate(homePage);

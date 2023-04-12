@@ -9,8 +9,7 @@
 
     <Window.Resources>
         <ResourceDictionary>
-            <BitmapImage x:Key="home" UriSource="/Images/home.png"/>
-            <BitmapImage x:Key="close" UriSource="/Images/close.png"/>
+            
             <Style TargetType="MenuItem">
                 <Setter Property="FontSize" Value="24"></Setter>
             </Style>
@@ -43,17 +42,17 @@
                 <Button x:Name="HomeButton" Click="HomeButton_Click">
                     <Image Source="{StaticResource home}"></Image>
                 </Button>
-                <Button x:Name="PersonButton" Click="HomeButton_Click">
-                    <Image Source="{StaticResource home}"></Image>
+                <Button x:Name="PersonButton" Click="PersonButton_Click">
+                    <Image Source="{StaticResource person}"></Image>
                 </Button>
-                <Button x:Name="JobButton" Click="HomeButton_Click">
-                    <Image Source="{StaticResource home}"></Image>
+                <Button x:Name="JobButton" Click="JobButton_Click">
+                    <Image Source="{StaticResource job}"></Image>
                 </Button>
-                <Button x:Name="TitleButton" Click="HomeButton_Click">
-                    <Image Source="{StaticResource home}"></Image>
+                <Button x:Name="TitleButton" Click="TitleButton_Click">
+                    <Image Source="{StaticResource title}"></Image>
                 </Button>
-                <Button x:Name="GengreButton" Click="HomeButton_Click">
-                    <Image Source="{StaticResource home}"></Image>
+                <Button x:Name="GenreButton" Click="GenreButton_Click">
+                    <Image Source="{StaticResource genre}"></Image>
                 </Button>
             </StackPanel>
         </ToolBar>

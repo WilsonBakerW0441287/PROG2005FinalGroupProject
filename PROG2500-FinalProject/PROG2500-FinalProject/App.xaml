@@ -4,6 +4,13 @@
              xmlns:local="clr-namespace:PROG2500_FinalProject"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <BitmapImage x:Key="home" UriSource="/Images/home.png"/>
+            <BitmapImage x:Key="close" UriSource="/Images/close.png"/>
+            <BitmapImage x:Key="person" UriSource="/Images/user.png"/>
+            <BitmapImage x:Key="job" UriSource="/Images/employee.png"/>
+            <BitmapImage x:Key="title" UriSource="/Images/movie.png"/>
+            <BitmapImage x:Key="genre" UriSource="/Images/genre.png"/>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

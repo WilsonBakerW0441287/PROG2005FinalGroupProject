@@ -1,0 +1,4 @@
+﻿<a href="https://www.flaticon.com/free-icons/profile" title="profile icons">Profile icons created by Bingge Liu - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/job" title="job icons">Job icons created by Pixel perfect - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/cinema" title="cinema icons">Cinema icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/genre" title="genre icons">Genre icons created by Freepik - Flaticon</a>
