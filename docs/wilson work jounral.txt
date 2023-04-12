@@ -1,0 +1,1 @@
+adding buttons to mainwindow for page navigation

@@ -63,3 +63,12 @@ C:\Users\HJang\Desktop\4th\C#\Final Project\PROG2500-FinalProject\PROG2500-Final
 C:\Users\HJang\Desktop\4th\C#\Final Project\PROG2500-FinalProject\PROG2500-FinalProject\obj\Debug\net7.0-windows\Pages\Home.g.cs
 C:\Users\HJang\Desktop\4th\C#\Final Project\PROG2500-FinalProject\PROG2500-FinalProject\bin\Debug\net7.0-windows\PROG2500-FinalProject.dll.config
 C:\Users\HJang\Desktop\4th\C#\Final Project\PROG2500-FinalProject\PROG2500-FinalProject\obj\Debug\net7.0-windows\Pages\Home.baml
+E:\IT programming LAST SEM\Windows programming\Assignment4\PROG2005FinalGroupProject\PROG2500-FinalProject\PROG2500-FinalProject\obj\Debug\net7.0-windows\PROG2500-FinalProject.csproj.AssemblyReference.cache
+E:\IT programming LAST SEM\Windows programming\Assignment4\PROG2005FinalGroupProject\PROG2500-FinalProject\PROG2500-FinalProject\obj\Debug\net7.0-windows\MainWindow.g.cs
+E:\IT programming LAST SEM\Windows programming\Assignment4\PROG2005FinalGroupProject\PROG2500-FinalProject\PROG2500-FinalProject\obj\Debug\net7.0-windows\Pages\Home.g.cs
+E:\IT programming LAST SEM\Windows programming\Assignment4\PROG2005FinalGroupProject\PROG2500-FinalProject\PROG2500-FinalProject\obj\Debug\net7.0-windows\App.g.cs
+E:\IT programming LAST SEM\Windows programming\Assignment4\PROG2005FinalGroupProject\PROG2500-FinalProject\PROG2500-FinalProject\obj\Debug\net7.0-windows\PROG2500-FinalProject_MarkupCompile.cache
+E:\IT programming LAST SEM\Windows programming\Assignment4\PROG2005FinalGroupProject\PROG2500-FinalProject\PROG2500-FinalProject\obj\Debug\net7.0-windows\PROG2500-FinalProject_MarkupCompile.lref
+E:\IT programming LAST SEM\Windows programming\Assignment4\PROG2005FinalGroupProject\PROG2500-FinalProject\PROG2500-FinalProject\obj\Debug\net7.0-windows\PROG2500-FinalProject.dll
+E:\IT programming LAST SEM\Windows programming\Assignment4\PROG2005FinalGroupProject\PROG2500-FinalProject\PROG2500-FinalProject\obj\Debug\net7.0-windows\refint\PROG2500-FinalProject.dll
+E:\IT programming LAST SEM\Windows programming\Assignment4\PROG2005FinalGroupProject\PROG2500-FinalProject\PROG2500-FinalProject\obj\Debug\net7.0-windows\PROG2500-FinalProject.pdb

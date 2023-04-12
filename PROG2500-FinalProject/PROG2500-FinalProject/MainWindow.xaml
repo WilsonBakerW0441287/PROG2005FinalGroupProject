@@ -43,6 +43,18 @@
                 <Button x:Name="HomeButton" Click="HomeButton_Click">
                     <Image Source="{StaticResource home}"></Image>
                 </Button>
+                <Button x:Name="PersonButton" Click="HomeButton_Click">
+                    <Image Source="{StaticResource home}"></Image>
+                </Button>
+                <Button x:Name="JobButton" Click="HomeButton_Click">
+                    <Image Source="{StaticResource home}"></Image>
+                </Button>
+                <Button x:Name="TitleButton" Click="HomeButton_Click">
+                    <Image Source="{StaticResource home}"></Image>
+                </Button>
+                <Button x:Name="GengreButton" Click="HomeButton_Click">
+                    <Image Source="{StaticResource home}"></Image>
+                </Button>
             </StackPanel>
         </ToolBar>
         <Frame x:Name="mainframe" Height="Auto" Width="Auto" NavigationUIVisibility="Hidden"/>
