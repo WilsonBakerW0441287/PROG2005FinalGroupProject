@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,25 @@ namespace PROG2500_FinalProject.Pages
     /// </summary>
     public partial class Genre : Page
     {
+        
         public Genre()
         {
             InitializeComponent();
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            //var query =
+            //    from a in _context.Artists
+            //    where a.Name.Contains(txtSearch.Text)
+            //    group a by a.Name.ToUpper().Substring(0, 1) into newGroup
+            //    select new
+            //    {
+            //        Index = newGroup.Key,
+            //        artistCount = newGroup.Count().ToString(),
+            //        Artists = newGroup.ToList()
+            //    };
+            //catalogListView.ItemsSource = query.ToList();
         }
     }
 }

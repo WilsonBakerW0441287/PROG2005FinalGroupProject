@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj": {}
+    "E:\\IT programming LAST SEM\\Windows programming\\Assignment4\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj": {
+    "E:\\IT programming LAST SEM\\Windows programming\\Assignment4\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
+        "projectUniqueName": "E:\\IT programming LAST SEM\\Windows programming\\Assignment4\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
         "projectName": "PROG2500-FinalProject",
-        "projectPath": "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
-        "packagesPath": "C:\\Users\\HJang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\obj\\",
+        "projectPath": "E:\\IT programming LAST SEM\\Windows programming\\Assignment4\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
+        "packagesPath": "C:\\Users\\wlhba\\.nuget\\packages\\",
+        "outputPath": "E:\\IT programming LAST SEM\\Windows programming\\Assignment4\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HJang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wlhba\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,7 +80,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

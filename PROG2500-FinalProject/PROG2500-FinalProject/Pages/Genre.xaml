@@ -8,7 +8,52 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Genre">
 
-    <Grid>
-        <TextBlock Text="IMDB_Project Genre" FontSize="24" FontWeight="Bold"></TextBlock>
-    </Grid>
+    <Page.Resources>
+        <CollectionViewSource x:Key="GenreViewSource"/>
+    </Page.Resources>
+
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Genre Search" Width="300"/>
+            <TextBlock Text="Search:"/>
+            <TextBox x:Name="txtSearch" Width="300"/>
+            <Button x:Name="btnSearch" Width="auto" Content="Search" Click="btnSearch_Click"/>
+        </StackPanel>
+
+        <ListView x:Name="GenreViewSource" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" Height="615">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Index}" />
+                        <TextBlock Text="{Binding genreCount}" />
+                        <TextBlock Text="View Artists" Width="auto"/>
+                        <Expander>
+                            <ListView ItemsSource="{Binding titles}" Height="250">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="{Binding Name}" Width="auto"/>
+                                            <!--<TextBlock Text="View Albums" Width="auto"/>-->
+                                            <!--<Expander>
+                                            <ListView ItemsSource="{Binding Albums}" Height="250">
+                                                <ListView.ItemTemplate>
+                                                        <DataTemplate>
+                                                            <StackPanel Orientation="Horizontal">
+                                                                <TextBlock Text="{Binding Title}" Width="auto"/>
+                                                            <TextBlock Text="View Tracks" Width="auto"/>
+                                                        </StackPanel>
+                                                        </DataTemplate>
+                                                    </ListView.ItemTemplate>
+                                                </ListView>
+                                            </Expander>-->
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Expander>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackPanel>
 </Page>
