@@ -28,8 +28,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
-                        <TextBlock Text="{Binding TitleID}" />
-                        <TextBlock Text="{Binding PrimaryTitle}" />
+                        <TextBlock Text="{Binding FormatedTitleCall}" />
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
