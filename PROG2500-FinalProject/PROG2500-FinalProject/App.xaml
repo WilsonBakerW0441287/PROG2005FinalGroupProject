@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:PROG2500_FinalProject"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <BitmapImage x:Key="Search" UriSource="/Images/search.png"/>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
