@@ -37,7 +37,7 @@ namespace PROG2500_FinalProject.Pages
         {
             _context.Titles.Load();
             var query = _context.Titles.Where(t => t.PrimaryTitle.Contains(searchTitle.Text)).ToList();
-            titleViewSource.Source = query;
+            TitleListView.ItemsSource = query.ToList();
 
         }
     }
