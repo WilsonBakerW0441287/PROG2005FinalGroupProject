@@ -27,9 +27,12 @@
         <ListView x:Name="TitleListView" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" Height="615">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Text="{Binding TitleID}" />
-                        <TextBlock Text="{Binding PrimaryTitle}" />
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding OriginalTitle}" />
+                        <TextBlock Text="{Binding IsAdult}" />
+                        <TextBlock Text="{Binding StartYear}" />
+                        <TextBlock Text="{Binding RuntimeMinutes}" />
+                        <TextBlock Text="{Binding TitleType}" />
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
