@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IMDB_Project.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PROG2500_FinalProject.Models
 {
-    internal class Genre
+    public partial class Genre
     {
     }
 }
