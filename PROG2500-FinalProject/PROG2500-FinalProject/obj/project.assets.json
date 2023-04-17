@@ -3463,19 +3463,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wlhba\\.nuget\\packages\\": {}
+    "C:\\Users\\HJang\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\IT programming LAST SEM\\Windows programming\\Assignment4\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
+      "projectUniqueName": "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
       "projectName": "PROG2500-FinalProject",
-      "projectPath": "E:\\IT programming LAST SEM\\Windows programming\\Assignment4\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
-      "packagesPath": "C:\\Users\\wlhba\\.nuget\\packages\\",
-      "outputPath": "E:\\IT programming LAST SEM\\Windows programming\\Assignment4\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\obj\\",
+      "projectPath": "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
+      "packagesPath": "C:\\Users\\HJang\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\wlhba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HJang\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3541,7 +3541,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -8,7 +8,116 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Person">
 
-    <Grid>
-        <TextBlock Text="IMDB_Project Person" FontSize="24" FontWeight="Bold"></TextBlock>
-    </Grid>
+    <Page.Resources>
+        <CollectionViewSource x:Key="personViewSource"/>
+    </Page.Resources>
+
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Person: " FontSize="16" FontWeight="Bold"></Label>
+            <TextBox x:Name="txtSearch" Width="300" FontSize="20" KeyDown="textSearch_KeyDown"></TextBox>
+            <Button x:Name="btnSearch" Click="btnSearch_Click" Width="30" Height="30">
+                <Image Source="/Images/search.png"/>
+            </Button>
+        </StackPanel>
+        <ListView x:Name="personListView" Height="420" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="{Binding PrimaryName}" FontSize="16" FontWeight="Bold"/>
+                        <Expander Header="Short Titles">
+                            <ListView ItemsSource="{Binding ShortTitles}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="{Binding PrimaryTitle}"/>
+                                            <TextBlock Text="{Binding StartYear, StringFormat=' StartYear: {0}'}"/>
+                                            <TextBlock Text="{Binding RuntimeMinutes, StringFormat=' RuntimeMinutes: {0}'}">
+                                                <TextBlock.Style>
+                                                    <Style TargetType="TextBlock">
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding RuntimeMinutes}" Value="{x:Null}">
+                                                                <Setter Property="Visibility" Value="Collapsed"/>
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </TextBlock.Style>
+                                            </TextBlock>
+                                            <TextBlock Text="{Binding AverageRating, StringFormat=' AverageRating: {0}'}">
+                                                <TextBlock.Style>
+                                                    <Style TargetType="TextBlock">
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding AverageRating}" Value="{x:Null}">
+                                                                <Setter Property="Visibility" Value="Collapsed"/>
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </TextBlock.Style>
+                                            </TextBlock>
+                                            <TextBlock Text="{Binding NumVotes, StringFormat=' NumVotes: {0}'}">
+                                                <TextBlock.Style>
+                                                    <Style TargetType="TextBlock">
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding NumVotes}" Value="{x:Null}">
+                                                                <Setter Property="Visibility" Value="Collapsed"/>
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </TextBlock.Style>
+                                            </TextBlock>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Expander>
+                        <Expander Header="Movie Titles">
+                            <ListView ItemsSource="{Binding MovieTitles}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="{Binding PrimaryTitle}"/>
+                                            <TextBlock Text="{Binding StartYear, StringFormat=' StartYear: {0}'}"/>
+                                            <TextBlock Text="{Binding RuntimeMinutes, StringFormat=' RuntimeMinutes: {0}'}">
+                                                <TextBlock.Style>
+                                                    <Style TargetType="TextBlock">
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding RuntimeMinutes}" Value="{x:Null}">
+                                                                <Setter Property="Visibility" Value="Collapsed"/>
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </TextBlock.Style>
+                                            </TextBlock>
+                                            <TextBlock Text="{Binding AverageRating, StringFormat=' AverageRating: {0}'}">
+                                                <TextBlock.Style>
+                                                    <Style TargetType="TextBlock">
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding AverageRating}" Value="{x:Null}">
+                                                                <Setter Property="Visibility" Value="Collapsed"/>
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </TextBlock.Style>
+                                            </TextBlock>
+                                            <TextBlock Text="{Binding NumVotes, StringFormat=' NumVotes: {0}'}">
+                                                <TextBlock.Style>
+                                                    <Style TargetType="TextBlock">
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding NumVotes}" Value="{x:Null}">
+                                                                <Setter Property="Visibility" Value="Collapsed"/>
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </TextBlock.Style>
+                                            </TextBlock>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Expander>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackPanel>
 </Page>
