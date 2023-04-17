@@ -43,7 +43,7 @@ namespace PROG2500_FinalProject.Pages
                 {
                     Index = newGroup.Key,
                     genreCount = newGroup.Count().ToString(),
-                    Genres = newGroup.ToList()
+                    Genres = newGroup.ToList(),
                 };
 
             GenreListView.ItemsSource = query.ToList();

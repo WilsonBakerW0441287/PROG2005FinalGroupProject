@@ -28,27 +28,26 @@
                     <StackPanel>
                         <TextBlock Text="{Binding Index}" />
                         <TextBlock Text="{Binding genreCount}" />
-                        <TextBlock Text="View Titles" Width="auto"/>
+                        <TextBlock Text="View Genres" Width="auto"/>
                         <Expander>
-
-
                             <ListView ItemsSource="{Binding Genres}" Height="150">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal">
                                             <TextBlock Text="{Binding Name}" Width="300"/>
-                                            <Expander>
-                                                <ListView ItemsSource="{Binding Titles}" Height="150">
+                                            <!--<Expander>
+                                                <ListView ItemsSource="{Binding Titles}" Height="50" Width="auto">
                                                     <ListView.ItemTemplate>
                                                         <DataTemplate>
                                                             <StackPanel Orientation="Horizontal">
                                                                 <TextBlock Text="{Binding PrimaryTitle}" Width="auto"/>
-
+                                                                <TextBlock Text="{Binding StartYear}" Width="auto"/>
+                                                                <TextBlock Text="{Binding RuntimeMinutes}" Width="auto"/>
                                                             </StackPanel>
                                                         </DataTemplate>
                                                     </ListView.ItemTemplate>
                                                 </ListView>
-                                            </Expander>
+                                            </Expander>-->
                                         </StackPanel>
                                     </DataTemplate>
                                 </ListView.ItemTemplate>
