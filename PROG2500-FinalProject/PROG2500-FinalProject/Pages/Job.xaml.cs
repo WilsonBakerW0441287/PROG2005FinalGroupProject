@@ -1,4 +1,6 @@
-﻿using System;
+﻿using IMDB_Project.Data;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,46 @@ namespace PROG2500_FinalProject.Pages
     /// </summary>
     public partial class Job : Page
     {
+        private readonly ImdbProjectContext _context = new ImdbProjectContext();
+        private CollectionViewSource jobViewSource;
+
         public Job()
         {
             InitializeComponent();
+            jobViewSource = (CollectionViewSource)FindResource(nameof(jobViewSource));
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            _context.Names.Load();
+            _context.Titles.Load();
+            _context.Principals.Load();
+
+            jobViewSource.Source = _context.Names.Local.ToObservableCollection();
+
+            var query = from p in _context.Principals
+                        join t in _context.Titles on p.TitleId equals t.TitleId
+                        join n in _context.Names on p.NameId equals n.NameId
+                        where n.PrimaryName.Contains(txtSearch.Text)
+                        group new { n, p, t } by new { n.PrimaryName, p.JobCategory, t.PrimaryTitle, t.StartYear } into g
+                        orderby g.Key.JobCategory, g.Key.StartYear descending
+                        select new
+                        {
+                            g.Key.PrimaryName,
+                            g.Key.JobCategory,
+                            g.Key.PrimaryTitle,
+                            g.Key.StartYear
+                        };
+
+            jobListView.ItemsSource = query.ToList();
+        }
+
+        private void textSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                btnSearch.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+            }
         }
     }
 }

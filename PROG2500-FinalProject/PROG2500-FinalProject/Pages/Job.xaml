@@ -8,7 +8,53 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Job">
 
-    <Grid>
-        <TextBlock Text="IMDB_Project Job" FontSize="24" FontWeight="Bold"></TextBlock>
-    </Grid>
+    <Page.Resources>
+        <CollectionViewSource x:Key="jobViewSource"/>
+        <DataTemplate x:Key="JobCategoryHeaderTemplate">
+            <TextBlock Text="{Binding Name}" />
+        </DataTemplate>
+    </Page.Resources>
+
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Job: " FontSize="16" FontWeight="Bold"></Label>
+            <TextBox x:Name="txtSearch" Width="300" FontSize="20" KeyDown="textSearch_KeyDown"></TextBox>
+            <Button x:Name="btnSearch" Click="btnSearch_Click" Width="30" Height="30">
+                <Image Source="/Images/search.png"/>
+            </Button>
+        </StackPanel>
+
+
+
+
+
+
+        <ListView x:Name="jobListView" Height="300">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Expander Header="{Binding JobCategory}">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="{Binding PrimaryName, StringFormat=' PrimaryName: {0}'}"/>
+                            <TextBlock Text="{Binding PrimaryTitle, StringFormat=' PrimaryTitle: {0}'}"/>
+                            <TextBlock Text="{Binding StartYear, StringFormat=' StartYear: {0}'}"/>
+                        </StackPanel>
+                    </Expander>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!--<ListView x:Name="jobListView" Height="300" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="{Binding JobCategory}"/>
+                        <TextBlock Text="{Binding PrimaryName, StringFormat=' PrimaryName: {0}'}"/>
+                        <TextBlock Text="{Binding PrimaryTitle, StringFormat=' PrimaryTitle: {0}'}"/>
+                        <TextBlock Text="{Binding StartYear, StringFormat=' StartYear: {0}'}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+
+    </StackPanel>
 </Page>
