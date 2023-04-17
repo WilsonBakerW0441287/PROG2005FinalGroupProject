@@ -1,4 +1,6 @@
-﻿using System;
+﻿using IMDB_Project.Data;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,23 @@ namespace PROG2500_FinalProject.Pages
     /// </summary>
     public partial class Title : Page
     {
+        private readonly ImdbProjectContext _context = new ImdbProjectContext();
+        private CollectionViewSource titleViewSource;
         public Title()
         {
             InitializeComponent();
+            titleViewSource = (CollectionViewSource)FindResource(nameof(titleViewSource));
+            //_context.Titles.Load();
+
+            //titleViewSource.Source = _context.Titles.Local.ToObservableCollection();
+        }
+
+        private void btnSearchTitle_Click(object sender, RoutedEventArgs e)
+        {
+            _context.Titles.Load();
+            var query = _context.Titles.Where(t => t.PrimaryTitle.Contains(searchTitle.Text)).ToList();
+            TitleListView.ItemsSource = query.ToList();
+
         }
     }
 }

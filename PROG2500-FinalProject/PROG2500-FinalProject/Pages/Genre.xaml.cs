@@ -28,23 +28,12 @@ namespace PROG2500_FinalProject.Pages
         {
             InitializeComponent();
             GenreViewSource = ((CollectionViewSource)(FindResource("GenreViewSource")));
-            _context.Genres.Load();
-            _context.Titles.Load();
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            //var query =
-            //    from a in _context.Artists
-            //    where a.Name.Contains(txtSearch.Text)
-            //    group a by a.Name.ToUpper().Substring(0, 1) into newGroup
-            //    select new
-            //    {
-            //        Index = newGroup.Key,
-            //        artistCount = newGroup.Count().ToString(),
-            //        Artists = newGroup.ToList()
-            //    };
-            //catalogListView.ItemsSource = query.ToList();
+            _context.Genres.Load();
+            _context.Titles.Load();
 
             var query =
                 from g in _context.Genres
@@ -54,8 +43,9 @@ namespace PROG2500_FinalProject.Pages
                 {
                     Index = newGroup.Key,
                     genreCount = newGroup.Count().ToString(),
-                    Titles = newGroup.ToList()
+                    Genres = newGroup.ToList()
                 };
+
             GenreListView.ItemsSource = query.ToList();
         }
     }

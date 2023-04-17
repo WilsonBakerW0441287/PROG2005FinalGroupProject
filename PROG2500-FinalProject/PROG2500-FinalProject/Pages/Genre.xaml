@@ -20,32 +20,35 @@
             <Button x:Name="btnSearch" Width="auto" Content="Search" Click="btnSearch_Click"/>
         </StackPanel>
 
+
         <ListView x:Name="GenreListView" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" Height="615">
+
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
                         <TextBlock Text="{Binding Index}" />
                         <TextBlock Text="{Binding genreCount}" />
-                        <TextBlock Text="View Artists" Width="auto"/>
+                        <TextBlock Text="View Titles" Width="auto"/>
                         <Expander>
-                            <ListView ItemsSource="{Binding Titles}" Height="250">
+
+
+                            <ListView ItemsSource="{Binding Genres}" Height="150">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="{Binding Name}" Width="auto"/>
-                                            <!--<TextBlock Text="View Albums" Width="auto"/>-->
-                                            <!--<Expander>
-                                            <ListView ItemsSource="{Binding Albums}" Height="250">
-                                                <ListView.ItemTemplate>
+                                            <TextBlock Text="{Binding Name}" Width="300"/>
+                                            <Expander>
+                                                <ListView ItemsSource="{Binding Titles}" Height="150">
+                                                    <ListView.ItemTemplate>
                                                         <DataTemplate>
                                                             <StackPanel Orientation="Horizontal">
-                                                                <TextBlock Text="{Binding Title}" Width="auto"/>
-                                                            <TextBlock Text="View Tracks" Width="auto"/>
-                                                        </StackPanel>
+                                                                <TextBlock Text="{Binding PrimaryTitle}" Width="auto"/>
+
+                                                            </StackPanel>
                                                         </DataTemplate>
                                                     </ListView.ItemTemplate>
                                                 </ListView>
-                                            </Expander>-->
+                                            </Expander>
                                         </StackPanel>
                                     </DataTemplate>
                                 </ListView.ItemTemplate>
