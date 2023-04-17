@@ -1,0 +1,10 @@
+https://alteridem.net/2016/03/24/restore-a-sql-server-backup-to-localdb/ - getting DB set up 
+
+Attributions
+<a href="https://www.flaticon.com/free-icons/home-button" title="home button icons">Home button icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/job" title="job icons">Job icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/title" title="title icons">Title icons created by Pixel perfect - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/genre" title="genre icons">Genre icons created by berkahicon - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/search" title="search icons">Search icons created by Smashicons - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by ariefstudio - Flaticon</a>

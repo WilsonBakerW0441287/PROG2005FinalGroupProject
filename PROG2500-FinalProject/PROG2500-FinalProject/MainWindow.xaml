@@ -64,19 +64,19 @@
         </DockPanel>
         <ToolBar DockPanel.Dock="Left">
             <StackPanel Orientation="Vertical" Width="50">
-                <Button x:Name="HomeButton" Click="HomeButton_Click">
+                <Button x:Name="HomeButton" Click="HomeButton_Click" ToolTip="Navigate home">
                     <Image Source="{StaticResource home}"></Image>
                 </Button>
-                <Button x:Name="PersonButton" Click="PersonButton_Click">
+                <Button x:Name="PersonButton" Click="PersonButton_Click" ToolTip="Navigate To person Search Page">
                     <Image Source="{StaticResource person}"></Image>
                 </Button>
-                <Button x:Name="JobButton" Click="JobButton_Click">
+                <Button x:Name="JobButton" Click="JobButton_Click" ToolTip="Navigate to Job Search Page">
                     <Image Source="{StaticResource job}"></Image>
                 </Button>
-                <Button x:Name="TitleButton" Click="TitleButton_Click">
+                <Button x:Name="TitleButton" Click="TitleButton_Click" ToolTip="Navigate to Movie Search Page">
                     <Image Source="{StaticResource title}"></Image>
                 </Button>
-                <Button x:Name="GenreButton" Click="GenreButton_Click">
+                <Button x:Name="GenreButton" Click="GenreButton_Click" ToolTip="Navigate to Genre Search Page">
                     <Image Source="{StaticResource genre}"></Image>
                 </Button>
             </StackPanel>
