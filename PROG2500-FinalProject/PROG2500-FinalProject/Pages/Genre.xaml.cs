@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using IMDB_Project.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,25 +22,32 @@ namespace PROG2500_FinalProject.Pages
     /// </summary>
     public partial class Genre : Page
     {
-        
+        private readonly ImdbProjectContext _context = new ImdbProjectContext();
+        private CollectionViewSource GenreViewSource;
         public Genre()
         {
             InitializeComponent();
+            GenreViewSource = ((CollectionViewSource)(FindResource("GenreViewSource")));
+
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            //var query =
-            //    from a in _context.Artists
-            //    where a.Name.Contains(txtSearch.Text)
-            //    group a by a.Name.ToUpper().Substring(0, 1) into newGroup
-            //    select new
-            //    {
-            //        Index = newGroup.Key,
-            //        artistCount = newGroup.Count().ToString(),
-            //        Artists = newGroup.ToList()
-            //    };
-            //catalogListView.ItemsSource = query.ToList();
+            _context.Genres.Load();
+            _context.Titles.Load();
+
+            var query =
+                from g in _context.Genres
+                where g.Name.Contains(txtSearch.Text)
+                group g by g.Name.ToUpper().Substring(0, 1) into newGroup
+                select new
+                {
+                    Index = newGroup.Key,
+                    genreCount = newGroup.Count().ToString(),
+                    Genres = newGroup.ToList()
+                };
+
+            GenreListView.ItemsSource = query.ToList();
         }
     }
 }
