@@ -20,7 +20,7 @@
             <Button x:Name="btnSearch" Width="auto" Content="Search" Click="btnSearch_Click"/>
         </StackPanel>
 
-        <ListView x:Name="GenreViewSource" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" Height="615">
+        <ListView x:Name="GenreListView" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" Height="615">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
@@ -28,7 +28,7 @@
                         <TextBlock Text="{Binding genreCount}" />
                         <TextBlock Text="View Artists" Width="auto"/>
                         <Expander>
-                            <ListView ItemsSource="{Binding titles}" Height="250">
+                            <ListView ItemsSource="{Binding Titles}" Height="250">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal">
