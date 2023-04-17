@@ -26,10 +26,31 @@
 
 
 
-
-
-
         <ListView x:Name="jobListView" Height="300">
+            <ListView.GroupStyle>
+                <GroupStyle>
+                    <GroupStyle.HeaderTemplate>
+                        <DataTemplate>
+                            <Expander Header="{Binding Name}">
+                                <ItemsPresenter />
+                            </Expander>
+                        </DataTemplate>
+                    </GroupStyle.HeaderTemplate>
+                </GroupStyle>
+            </ListView.GroupStyle>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="{Binding PrimaryName, StringFormat=' PrimaryName: {0}'}"/>
+                        <TextBlock Text="{Binding PrimaryTitle, StringFormat=' PrimaryTitle: {0}'}"/>
+                        <TextBlock Text="{Binding StartYear, StringFormat=' StartYear: {0}'}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+        <!--<ListView x:Name="jobListView" Height="300">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Expander Header="{Binding JobCategory}">
@@ -41,7 +62,7 @@
                     </Expander>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>
+        </ListView>-->
 
         <!--<ListView x:Name="jobListView" Height="300" >
             <ListView.ItemTemplate>
