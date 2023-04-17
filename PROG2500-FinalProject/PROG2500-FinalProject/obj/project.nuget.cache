@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IWpKiIRFqFw+fwMVMRQBNo1tKLi6JJnXVzxBLb6dMCAujQXpqcO9xZ/EpqyY1nFWxOGhM0dGwpRwfSOHcwMnhA==",
+  "dgSpecHash": "9hCLhEUQFZCOLTGCUfpIVtD6/6uooFQRpD1cdtDGRZwz8bJx81shDHliZ3w7gDCKZyXc7MmpvZKtfB6tWPuaIw==",
   "success": true,
-  "projectFilePath": "E:\\IT programming LAST SEM\\Windows programming\\A4\\a4again\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
+  "projectFilePath": "E:\\IT programming LAST SEM\\Windows programming\\A4\\assignment4 again\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wlhba\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\wlhba\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -348,3 +348,19 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+PROG2500-FinalProject/PROG2500-FinalProject/obj/Debug/net7.0-windows/PROG2500-FinalProject.assets.cache
+*.editorconfig
+PROG2500-FinalProject/PROG2500-FinalProject/obj/Debug/net7.0-windows/App.g.i.cs
+PROG2500-FinalProject/PROG2500-FinalProject/obj/Debug/net7.0-windows/MainWindow.g.i.cs
+PROG2500-FinalProject/PROG2500-FinalProject/obj/Debug/net7.0-windows/Pages/Genre.g.i.cs
+PROG2500-FinalProject/PROG2500-FinalProject/obj/Debug/net7.0-windows/Pages/Home.g.i.cs
+PROG2500-FinalProject/PROG2500-FinalProject/obj/Debug/net7.0-windows/Pages/Job.g.i.cs
+PROG2500-FinalProject/PROG2500-FinalProject/obj/Debug/net7.0-windows/Pages/Person.g.i.cs
+PROG2500-FinalProject/PROG2500-FinalProject/obj/Debug/net7.0-windows/Pages/Title.g.i.cs
+PROG2500-FinalProject/PROG2500-FinalProject/obj/Debug/net7.0-windows/PROG2500-FinalProject.assets.cache
+*.editorconfig
+*.cache
+*.lref
+*.json
+*.json
+*.cache

@@ -53,7 +53,7 @@ namespace PROG2500_FinalProject.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PROG2500-FinalProject;component/pages/job.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PROG2500-FinalProject;V1.0.0.0;component/pages/job.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\Job.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
