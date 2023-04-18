@@ -27,9 +27,9 @@
     </Page.Resources>
     <StackPanel>
         <StackPanel Orientation="Horizontal">
-            <TextBlock Text="Movie Info                                 " FontSize="24" FontWeight="Bold"/>
+            <TextBlock Text="Movie Info                          " FontSize="24" FontWeight="Bold"/>
             <TextBlock  Text="Search:  " FontSize="24" FontWeight="Bold"/>
-            <TextBox TextAlignment="Left" x:Name="searchTitle" Width="300" Height="30" FontSize="24"/>
+            <TextBox TextAlignment="Left" x:Name="searchTitle" Width="300" Height="30" FontSize="24" KeyDown="textSearch_KeyDown"/>
             <Button x:Name="btnSearchTitle" Click="btnSearchTitle_Click">
                 <Image Source="{StaticResource Search}" Width="30" />
             </Button>

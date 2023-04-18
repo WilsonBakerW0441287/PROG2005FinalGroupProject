@@ -25,27 +25,27 @@
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="_Pages">
-                <MenuItem Header="_Home" Click="HomeButton_Click" ToolTip="Navigate home">
+                <MenuItem Header="_Home" Click="HomeButton_Click" ToolTip="Navigate home" Background="#FFF6C700">
                     <MenuItem.Icon>
                         <Image Source="{StaticResource home}"></Image>
                     </MenuItem.Icon>
                 </MenuItem>
-                <MenuItem Header="_Person" Click="PersonButton_Click" ToolTip="Navigate To person Search Page">
+                <MenuItem Header="_Person" Click="PersonButton_Click" ToolTip="Navigate To person Search Page" Background="#FFF6C700">
                     <MenuItem.Icon>
                         <Image Source="{StaticResource person}"></Image>
                     </MenuItem.Icon>
                 </MenuItem>
-                <MenuItem Header="_Job" Click="JobButton_Click" ToolTip="Navigate to Job Search Page">
+                <MenuItem Header="_Job" Click="JobButton_Click" ToolTip="Navigate to Job Search Page" Background="#FFF6C700">
                     <MenuItem.Icon>
                         <Image Source="{StaticResource job}"></Image>
                     </MenuItem.Icon>
                 </MenuItem>
-                <MenuItem Header="_Title" Click="TitleButton_Click" ToolTip="Navigate to Movie Search Page">
+                <MenuItem Header="_Title" Click="TitleButton_Click" ToolTip="Navigate to Movie Search Page" Background="#FFF6C700">
                     <MenuItem.Icon>
                         <Image Source="{StaticResource title}"></Image>
                     </MenuItem.Icon>
                 </MenuItem>
-                <MenuItem Header="_Genre" Click="GenreButton_Click" ToolTip="Navigate to Genre Search Page">
+                <MenuItem Header="_Genre" Click="GenreButton_Click" ToolTip="Navigate to Genre Search Page" Background="#FFF6C700">
                     <MenuItem.Icon>
                         <Image Source="{StaticResource genre}"></Image>
                     </MenuItem.Icon>

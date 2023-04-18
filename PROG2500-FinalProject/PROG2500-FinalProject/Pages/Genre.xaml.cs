@@ -32,9 +32,6 @@ namespace PROG2500_FinalProject.Pages
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            _context.Genres.Load();
-            _context.Titles.Load();
-
             var query =
                 from g in _context.Genres
                 where g.Name.Contains(txtSearch.Text)
@@ -47,6 +44,14 @@ namespace PROG2500_FinalProject.Pages
                 };
 
             GenreListView.ItemsSource = query.ToList();
+        }
+
+        private void textSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                btnSearch.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+            }
         }
     }
 }

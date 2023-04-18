@@ -3463,24 +3463,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\snags\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\HJang\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\snags\\source\\repos\\PROG2005FinalGroupProject\\WebFinal\\FinalFInalWeb\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
+      "projectUniqueName": "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
       "projectName": "PROG2500-FinalProject",
-      "projectPath": "C:\\Users\\snags\\source\\repos\\PROG2005FinalGroupProject\\WebFinal\\FinalFInalWeb\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
-      "packagesPath": "C:\\Users\\snags\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\snags\\source\\repos\\PROG2005FinalGroupProject\\WebFinal\\FinalFInalWeb\\PROG2500-FinalProject\\PROG2500-FinalProject\\obj\\",
+      "projectPath": "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\PROG2500-FinalProject.csproj",
+      "packagesPath": "C:\\Users\\HJang\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HJang\\Desktop\\4th\\C#\\Final Project\\PROG2005FinalGroupProject\\PROG2500-FinalProject\\PROG2500-FinalProject\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\snags\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\HJang\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3546,7 +3541,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

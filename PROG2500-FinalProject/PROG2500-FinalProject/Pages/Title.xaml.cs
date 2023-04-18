@@ -28,17 +28,21 @@ namespace PROG2500_FinalProject.Pages
         {
             InitializeComponent();
             titleViewSource = (CollectionViewSource)FindResource(nameof(titleViewSource));
-            //_context.Titles.Load();
-
-            //titleViewSource.Source = _context.Titles.Local.ToObservableCollection();
         }
 
         private void btnSearchTitle_Click(object sender, RoutedEventArgs e)
         {
-            _context.Titles.Load();
+            //_context.Titles.Load();
             var query = _context.Titles.Where(t => t.PrimaryTitle.Contains(searchTitle.Text)).ToList();
             TitleListView.ItemsSource = query.ToList();
+        }
 
+        private void textSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                btnSearchTitle.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+            }
         }
     }
 }

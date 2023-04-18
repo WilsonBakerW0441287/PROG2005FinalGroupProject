@@ -24,7 +24,7 @@
     </Page.Resources>
 
     <StackPanel>
-        <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Horizontal" Background="#FFF6C700">
             <Label Content="Person: " FontSize="16" FontWeight="Bold"></Label>
             <TextBox x:Name="txtSearch" Width="300" FontSize="20" KeyDown="textSearch_KeyDown"></TextBox>
             <Button x:Name="btnSearch" Click="btnSearch_Click" Width="30" Height="30">
