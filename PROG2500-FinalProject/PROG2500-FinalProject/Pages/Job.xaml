@@ -17,7 +17,7 @@
 
     <StackPanel>
         <StackPanel Orientation="Horizontal">
-            <Label Content="Job: " FontSize="16" FontWeight="Bold"></Label>
+            <Label Content="Enter a Name to See what Job(s) they Have: " FontSize="16" FontWeight="Bold"></Label>
             <TextBox x:Name="txtSearch" Width="300" FontSize="20" KeyDown="textSearch_KeyDown"></TextBox>
             <Button x:Name="btnSearch" Click="btnSearch_Click" Width="30" Height="30">
                 <Image Source="/Images/search.png"/>
