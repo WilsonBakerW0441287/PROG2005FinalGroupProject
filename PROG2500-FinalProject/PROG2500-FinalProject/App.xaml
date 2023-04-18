@@ -12,7 +12,7 @@
             <BitmapImage x:Key="job" UriSource="/Images/job.png"/>
             <BitmapImage x:Key="title" UriSource="/Images/title.png"/>
             <BitmapImage x:Key="genre" UriSource="/Images/genre.png"/>
-            <BitmapImage x:Key="IMDBXNSCC" UriSource="/Images/IMBDXNSCC.png"
+            <BitmapImage x:Key="IMDBXNSCC" UriSource="/Images/IMBDXNSCC.png"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
