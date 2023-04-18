@@ -21,6 +21,11 @@
             </Button>
         </StackPanel>
         <ListView x:Name="personListView" Height="500" >
+            <ListView.Resources>
+                <Style TargetType="{x:Type ScrollViewer}">
+                    <Setter Property="CanContentScroll" Value="False"/>
+                </Style>
+            </ListView.Resources>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Vertical">
