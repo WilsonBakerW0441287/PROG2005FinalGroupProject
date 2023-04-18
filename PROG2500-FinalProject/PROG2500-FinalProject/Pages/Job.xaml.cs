@@ -59,14 +59,19 @@ namespace PROG2500_FinalProject.Pages
                                 join t in _context.Titles on p.TitleId equals t.TitleId
                                 join n in _context.Names on p.NameId equals n.NameId
                                 where n.PrimaryName.Contains(txtSearch.Text)
-                                group new { n, p, t } by new { n.PrimaryName, p.JobCategory, t.PrimaryTitle, t.StartYear } into g
-                                orderby g.Key.JobCategory, g.Key.StartYear descending
+                                group new { n, p, t } by new { p.JobCategory } into g
+                                orderby g.Key.JobCategory
                                 select new
                                 {
-                                    g.Key.PrimaryName,
-                                    g.Key.JobCategory,
-                                    g.Key.PrimaryTitle,
-                                    g.Key.StartYear
+                                    JobCategory = g.Key.JobCategory,
+                                    Items = from item in g
+                                            orderby item.t.StartYear descending
+                                            select new
+                                            {
+                                                item.n.PrimaryName,
+                                                item.t.PrimaryTitle,
+                                                item.t.StartYear
+                                            }
                                 };
 
                     jobListView.ItemsSource = query.ToList();

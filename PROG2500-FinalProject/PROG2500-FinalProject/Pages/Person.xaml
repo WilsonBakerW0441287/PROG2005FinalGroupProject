@@ -20,7 +20,7 @@
                 <Image Source="/Images/search.png"/>
             </Button>
         </StackPanel>
-        <ListView x:Name="personListView" Height="420" >
+        <ListView x:Name="personListView" Height="500" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Vertical">

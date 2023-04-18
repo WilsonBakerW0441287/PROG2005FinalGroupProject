@@ -10,9 +10,6 @@
 
     <Page.Resources>
         <CollectionViewSource x:Key="jobViewSource"/>
-        <DataTemplate x:Key="JobCategoryHeaderTemplate">
-            <TextBlock Text="{Binding Name}" />
-        </DataTemplate>
     </Page.Resources>
 
     <StackPanel>
@@ -23,59 +20,31 @@
                 <Image Source="/Images/search.png"/>
             </Button>
         </StackPanel>
-
-
-
         <ListView x:Name="jobListView" Height="500">
-            <ListView.GroupStyle>
-                <GroupStyle>
-                    <GroupStyle.HeaderTemplate>
-                        <DataTemplate>
-                            <Expander Header="{Binding Name}">
-                                <ItemsPresenter />
-                            </Expander>
-                        </DataTemplate>
-                    </GroupStyle.HeaderTemplate>
-                </GroupStyle>
-            </ListView.GroupStyle>
+            <ListView.Resources>
+                <Style TargetType="{x:Type ScrollViewer}">
+                    <Setter Property="CanContentScroll" Value="False"/>
+                </Style>
+            </ListView.Resources>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="{Binding PrimaryName, StringFormat=' PrimaryName: {0}'}"/>
-                        <TextBlock Text="{Binding PrimaryTitle, StringFormat=' PrimaryTitle: {0}'}"/>
-                        <TextBlock Text="{Binding StartYear, StringFormat=' StartYear: {0}'}"/>
+                        <Expander Header="{Binding JobCategory}">
+                            <ItemsControl ItemsSource="{Binding Items}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Vertical">
+                                            <TextBlock Text="{Binding PrimaryName, StringFormat=' PrimaryName: {0}'}"/>
+                                            <TextBlock Text="{Binding PrimaryTitle, StringFormat=' PrimaryTitle: {0}'}"/>
+                                            <TextBlock Text="{Binding StartYear, StringFormat=' StartYear: {0}'}"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </Expander>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
-
-        <!--<ListView x:Name="jobListView" Height="300">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <Expander Header="{Binding JobCategory}">
-                        <StackPanel Orientation="Vertical">
-                            <TextBlock Text="{Binding PrimaryName, StringFormat=' PrimaryName: {0}'}"/>
-                            <TextBlock Text="{Binding PrimaryTitle, StringFormat=' PrimaryTitle: {0}'}"/>
-                            <TextBlock Text="{Binding StartYear, StringFormat=' StartYear: {0}'}"/>
-                        </StackPanel>
-                    </Expander>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>-->
-
-        <!--<ListView x:Name="jobListView" Height="300" >
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Vertical">
-                        <TextBlock Text="{Binding JobCategory}"/>
-                        <TextBlock Text="{Binding PrimaryName, StringFormat=' PrimaryName: {0}'}"/>
-                        <TextBlock Text="{Binding PrimaryTitle, StringFormat=' PrimaryTitle: {0}'}"/>
-                        <TextBlock Text="{Binding StartYear, StringFormat=' StartYear: {0}'}"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>-->
-
     </StackPanel>
 </Page>
