@@ -12,6 +12,8 @@
     <None Remove="Images\close.png" />
     <None Remove="Images\genre.png" />
     <None Remove="Images\home.png" />
+    <None Remove="Images\IMDB_Logo_2016.png" />
+    <None Remove="Images\itn-nscc-logo.png" />
     <None Remove="Images\job.png" />
     <None Remove="Images\person.png" />
     <None Remove="Images\search.png" />
@@ -40,6 +42,12 @@
     </Resource>
     <Resource Include="Images\home.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\IMDB_Logo_2016.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\itn-nscc-logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\job.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

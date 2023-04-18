@@ -9,12 +9,6 @@
 
     <Window.Resources>
         <ResourceDictionary>
-            <BitmapImage x:Key="home" UriSource="/Images/home.png"/>
-            <BitmapImage x:Key="close" UriSource="/Images/close.png"/>
-            <BitmapImage x:Key="person" UriSource="/Images/person.png"/>
-            <BitmapImage x:Key="job" UriSource="/Images/job.png"/>
-            <BitmapImage x:Key="title" UriSource="/Images/title.png"/>
-            <BitmapImage x:Key="genre" UriSource="/Images/genre.png"/>
             <Style TargetType="MenuItem">
                 <Setter Property="FontSize" Value="24"></Setter>
             </Style>
@@ -24,34 +18,34 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_File">
-                <MenuItem Header="_Exit" Click="ExitButton_Click">
+                <MenuItem Header="_Exit" Click="ExitButton_Click" ToolTip="Exit the Application">
                     <MenuItem.Icon>
                         <Image Source="{StaticResource close}"></Image>
                     </MenuItem.Icon>
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="_Pages">
-                <MenuItem Header="_Home" Click="HomeButton_Click">
+                <MenuItem Header="_Home" Click="HomeButton_Click" ToolTip="Navigate home">
                     <MenuItem.Icon>
                         <Image Source="{StaticResource home}"></Image>
                     </MenuItem.Icon>
                 </MenuItem>
-                <MenuItem Header="_Person" Click="PersonButton_Click">
+                <MenuItem Header="_Person" Click="PersonButton_Click" ToolTip="Navigate To person Search Page">
                     <MenuItem.Icon>
                         <Image Source="{StaticResource person}"></Image>
                     </MenuItem.Icon>
                 </MenuItem>
-                <MenuItem Header="_Job" Click="JobButton_Click">
+                <MenuItem Header="_Job" Click="JobButton_Click" ToolTip="Navigate to Job Search Page">
                     <MenuItem.Icon>
                         <Image Source="{StaticResource job}"></Image>
                     </MenuItem.Icon>
                 </MenuItem>
-                <MenuItem Header="_Title" Click="TitleButton_Click">
+                <MenuItem Header="_Title" Click="TitleButton_Click" ToolTip="Navigate to Movie Search Page">
                     <MenuItem.Icon>
                         <Image Source="{StaticResource title}"></Image>
                     </MenuItem.Icon>
                 </MenuItem>
-                <MenuItem Header="_Genre" Click="GenreButton_Click">
+                <MenuItem Header="_Genre" Click="GenreButton_Click" ToolTip="Navigate to Genre Search Page">
                     <MenuItem.Icon>
                         <Image Source="{StaticResource genre}"></Image>
                     </MenuItem.Icon>

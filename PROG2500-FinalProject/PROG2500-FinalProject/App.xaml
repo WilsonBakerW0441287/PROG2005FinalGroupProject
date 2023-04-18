@@ -6,6 +6,12 @@
     <Application.Resources>
         <ResourceDictionary>
             <BitmapImage x:Key="Search" UriSource="/Images/search.png"/>
+            <BitmapImage x:Key="home" UriSource="/Images/home.png"/>
+            <BitmapImage x:Key="close" UriSource="/Images/close.png"/>
+            <BitmapImage x:Key="person" UriSource="/Images/person.png"/>
+            <BitmapImage x:Key="job" UriSource="/Images/job.png"/>
+            <BitmapImage x:Key="title" UriSource="/Images/title.png"/>
+            <BitmapImage x:Key="genre" UriSource="/Images/genre.png"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

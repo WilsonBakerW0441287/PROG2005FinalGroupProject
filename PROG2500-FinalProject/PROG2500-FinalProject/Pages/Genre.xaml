@@ -35,7 +35,7 @@
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal">
                                             <TextBlock Text="{Binding Name}" Width="300"/>
-                                            <!--<Expander>
+                                            <Expander>
                                                 <ListView ItemsSource="{Binding Titles}" Height="50" Width="auto">
                                                     <ListView.ItemTemplate>
                                                         <DataTemplate>
@@ -47,7 +47,7 @@
                                                         </DataTemplate>
                                                     </ListView.ItemTemplate>
                                                 </ListView>
-                                            </Expander>-->
+                                            </Expander>
                                         </StackPanel>
                                     </DataTemplate>
                                 </ListView.ItemTemplate>

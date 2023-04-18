@@ -11,5 +11,6 @@
     <StackPanel>
         <TextBlock Text="IMDB_Project - Your one-stop shop for great movie" FontSize="24" FontWeight="Bold"></TextBlock>
         <TextBlock Text="Please select a page to begin your movie journey" FontSize="22"></TextBlock>
+        <Image Height="376" Width="726"/>
     </StackPanel>
 </Page>
