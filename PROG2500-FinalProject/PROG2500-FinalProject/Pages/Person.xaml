@@ -35,7 +35,7 @@
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="{Binding PrimaryTitle}"/>
+                                            <TextBlock Text="{Binding PrimaryTitle}" FontWeight="Bold"/>
                                             <TextBlock Text="{Binding StartYear, StringFormat=' StartYear: {0}'}"/>
                                             <TextBlock Text="{Binding RuntimeMinutes, StringFormat=' RuntimeMinutes: {0}'}">
                                                 <TextBlock.Style>
@@ -80,7 +80,7 @@
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="{Binding PrimaryTitle}"/>
+                                            <TextBlock Text="{Binding PrimaryTitle}" FontWeight="Bold"/>
                                             <TextBlock Text="{Binding StartYear, StringFormat=' StartYear: {0}'}"/>
                                             <TextBlock Text="{Binding RuntimeMinutes, StringFormat=' RuntimeMinutes: {0}'}">
                                                 <TextBlock.Style>

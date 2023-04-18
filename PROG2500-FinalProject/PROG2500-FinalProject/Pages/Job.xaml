@@ -34,7 +34,7 @@
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate>
                                         <StackPanel Orientation="Vertical">
-                                            <TextBlock Text="{Binding PrimaryName, StringFormat=' PrimaryName: {0}'}"/>
+                                            <TextBlock Text="{Binding PrimaryName, StringFormat=' PrimaryName: {0}'}" FontWeight="Bold"/>
                                             <TextBlock Text="{Binding PrimaryTitle, StringFormat=' PrimaryTitle: {0}'}"/>
                                             <TextBlock Text="{Binding StartYear, StringFormat=' StartYear: {0}'}"/>
                                         </StackPanel>
