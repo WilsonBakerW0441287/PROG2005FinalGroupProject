@@ -10,6 +10,17 @@
 
     <Page.Resources>
         <CollectionViewSource x:Key="personViewSource"/>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="Background" Value="#FFF6C700" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+        <Style TargetType="{x:Type ListView}">
+            <Setter Property="Background" Value="#FFF6C700" />
+        </Style>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#FFF6C700" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
     </Page.Resources>
 
     <StackPanel>

@@ -13,4 +13,17 @@
         <TextBlock Text="Please select a page to begin your movie journey" FontSize="22"></TextBlock>
         <Image Height="376" Width="726" Source="{StaticResource IMDBXNSCC}"/>
     </StackPanel>
+    <Page.Resources>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="Background" Value="#FFF6C700" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+        <Style TargetType="{x:Type ListView}">
+            <Setter Property="Background" Value="#FFF6C700" />
+        </Style>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#FFF6C700" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+    </Page.Resources>
 </Page>
