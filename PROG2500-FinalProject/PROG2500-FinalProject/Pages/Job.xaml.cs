@@ -39,23 +39,40 @@ namespace PROG2500_FinalProject.Pages
 
             jobViewSource.Source = _context.Names.Local.ToObservableCollection();
 
-            var query = from p in _context.Principals
-                        join t in _context.Titles on p.TitleId equals t.TitleId
-                        join n in _context.Names on p.NameId equals n.NameId
-                        where n.PrimaryName.Contains(txtSearch.Text)
-                        group new { n, p, t } by new { n.PrimaryName, p.JobCategory, t.PrimaryTitle, t.StartYear } into g
-                        orderby g.Key.JobCategory, g.Key.StartYear descending
-                        select new
-                        {
-                            g.Key.PrimaryName,
-                            g.Key.JobCategory,
-                            g.Key.PrimaryTitle,
-                            g.Key.StartYear
-                        };
+            //if statement that checks if the search box is empty
+            //if statement that checks if the name is in the DB BEFORE trying to populate list
 
-            jobListView.ItemsSource = query.ToList();
+            if (txtSearch.Text == "")
+            {
+                MessageBox.Show("Please enter a name to search for.");
+            }
+            else
+            {
+                if (txtSearch.Text == _context.Names.Local.ToObservableCollection().ToString())
+                {
+                    MessageBox.Show("Name not found.");
+                }
+                else
+                {
+
+                    var query = from p in _context.Principals
+                                join t in _context.Titles on p.TitleId equals t.TitleId
+                                join n in _context.Names on p.NameId equals n.NameId
+                                where n.PrimaryName.Contains(txtSearch.Text)
+                                group new { n, p, t } by new { n.PrimaryName, p.JobCategory, t.PrimaryTitle, t.StartYear } into g
+                                orderby g.Key.JobCategory, g.Key.StartYear descending
+                                select new
+                                {
+                                    g.Key.PrimaryName,
+                                    g.Key.JobCategory,
+                                    g.Key.PrimaryTitle,
+                                    g.Key.StartYear
+                                };
+
+                    jobListView.ItemsSource = query.ToList();
+                }
+            }
         }
-
         private void textSearch_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)

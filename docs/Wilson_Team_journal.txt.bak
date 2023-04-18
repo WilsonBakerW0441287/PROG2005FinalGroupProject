@@ -22,11 +22,10 @@ Making Genre Page
 
 Helping Abdul restore db
 	This proved to not be possible given the stateagy we tried (using a query to restore and get .mdf/.ldf).
-	this did not hinder us however as when he would upload his code to github Han or I was able 
+	this did not hinder us however as when he would upload his code to github Han or I then tested and showed him the result, this was less time efficient but MORE time efficient than not getting anywhere trying to restore the DB
 
 GitHub issues
 	A lot of IDE files (caches/.dll/.suo/etc...) change CONSTANTLY and are CONSTANTLY making conflicts for merges/pushs/pulls
 	CONSTANTLY having to delete my local repo and get the repo from online.
 	figuring out how to make .gitignore 
 		Even after we have .gitignore all the files we tell it to ignore are still there (????)
-	
