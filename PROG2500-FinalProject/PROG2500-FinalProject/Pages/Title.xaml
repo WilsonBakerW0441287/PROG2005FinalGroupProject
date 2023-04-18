@@ -10,6 +10,9 @@
 
     <Page.Resources>
         <CollectionViewSource x:Key="titleViewSource"></CollectionViewSource>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="Yellow"/>
+        </Style>
     </Page.Resources>
     <StackPanel>
         <StackPanel Orientation="Horizontal">
@@ -20,11 +23,7 @@
                 <Image Source="{StaticResource Search}" Width="30" />
             </Button>
         </StackPanel>
-        <StackPanel Orientation="Horizontal">
-            <TextBlock Text="ID" Padding="0,0,200,0" FontSize="24" FontWeight="Bold"/>
-            <TextBlock Text="Name" Padding="250,0,250,0" FontSize="24" FontWeight="Bold"/>
-        </StackPanel>
-        <ListView x:Name="TitleListView" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" Height="615">
+        <ListView x:Name="TitleListView" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" Height="550" Width="750">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
