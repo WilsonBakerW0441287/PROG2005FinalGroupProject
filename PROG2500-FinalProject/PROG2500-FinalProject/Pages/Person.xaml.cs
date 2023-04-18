@@ -33,11 +33,6 @@ namespace PROG2500_FinalProject.Pages
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            _context.Names.Load();
-            _context.Titles.Load();
-
-            personViewSource.Source = _context.Names.Local.ToObservableCollection();
-
             var query = from n in _context.Names
                         join p in _context.Principals on n.NameId equals p.NameId
                         join t in _context.Titles on p.TitleId equals t.TitleId

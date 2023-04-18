@@ -33,12 +33,6 @@ namespace PROG2500_FinalProject.Pages
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            _context.Names.Load();
-            _context.Titles.Load();
-            _context.Principals.Load();
-
-            jobViewSource.Source = _context.Names.Local.ToObservableCollection();
-
             //if statement that checks if the search box is empty
             //if statement that checks if the name is in the DB BEFORE trying to populate list
 
